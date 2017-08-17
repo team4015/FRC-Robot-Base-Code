@@ -42,7 +42,7 @@ public class Teleop extends CommandGroup
     	addParallel(new MovePiston());
     	
     	// Uncomment for manual compressor control
-    	// addParallel(new ToggleCompressor());
+    	addParallel(new ToggleCompressor());
     	
     	// Add Pneumatics and other commands here, e.g. "ramp" from steamworks robot
     }

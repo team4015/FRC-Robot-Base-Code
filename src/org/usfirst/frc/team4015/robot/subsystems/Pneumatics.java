@@ -32,7 +32,6 @@ public class Pneumatics extends Subsystem
 		
 		// Compressor automatic refill
 		// (when pressure is below switch threshold)
-		// comment out for manual compressor control
 		compressor.setClosedLoopControl(true);
 	}
 	
@@ -43,7 +42,6 @@ public class Pneumatics extends Subsystem
 	    if (compressor.enabled() == false)
 	    {
 	    	compressor.setClosedLoopControl(true);
-	   		compressor.start();
 	    }
 	    else
 	    {
