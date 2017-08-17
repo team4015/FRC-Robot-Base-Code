@@ -3,6 +3,10 @@ package org.usfirst.frc.team4015.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc.team4015.robot.Robot;
 
+/* ===================================================
+ * This is a template class for creating a new Command
+ * =================================================*/
+
 public class ExampleCommand extends Command
 {
 	public ExampleCommand()

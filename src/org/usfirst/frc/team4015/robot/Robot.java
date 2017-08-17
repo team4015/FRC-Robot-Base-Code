@@ -19,11 +19,8 @@ import org.usfirst.frc.team4015.robot.robotModes.Teleop;
 import org.usfirst.frc.team4015.robot.robotModes.Auto;
 
 /* =============================================================================
- * The VM is configured to automatically run this class, and to call the
- * functions corresponding to each mode, as described in the IterativeRobot
- * documentation. If you change the name of this class or the package after
- * creating this project, you must also update the manifest file in the resource
- * directory.
+ * The RoboRIO will automatically run the methods in this class depending on
+ * which part of the match is being played.
  * ============================================================================*/
 
 public class Robot extends IterativeRobot

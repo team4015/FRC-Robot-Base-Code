@@ -2,9 +2,20 @@ package org.usfirst.frc.team4015.robot.commands;
 
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
-
 import org.usfirst.frc.team4015.robot.OI;
 import org.usfirst.frc.team4015.robot.Robot;
+
+/* ===================================================
+ * This command enables the user to manually turn the 
+ * compressor on and off by pressing button 9 on the
+ * Attack 3 stick.  For automatic compressor control,
+ * do not use this command in the Teleop CommandGroup,
+ * or leave the compressor on by pressing button 9 if it
+ * is currently off.
+ * 
+ * NOTE: The compressor will automatically shut off 
+ * after 120 psi is reached.
+ * =================================================*/
 
 public class ToggleCompressor extends Command
 {

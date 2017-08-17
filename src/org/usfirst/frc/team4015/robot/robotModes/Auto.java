@@ -1,7 +1,11 @@
 package org.usfirst.frc.team4015.robot.robotModes;
 
 import org.usfirst.frc.team4015.robot.commands.SpinToWin;
-// import other auto commands here
+
+/* ===================================================
+ * This CommandGroup calls the autonomous command to
+ * spin the robot :P
+ * =================================================*/
 
 import edu.wpi.first.wpilibj.command.CommandGroup;
 

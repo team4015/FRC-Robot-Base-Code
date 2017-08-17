@@ -3,8 +3,12 @@ package org.usfirst.frc.team4015.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc.team4015.robot.Robot;
 
-// Use this command to test autonomous mode //
-// The compressor will run in preparation for teleop
+/* ===================================================
+ * This command spins the robot in the autonomous period.
+ * 2017 kids will get this lol :P
+ * Use this command to test autonomous mode.
+ * The compressor will run in preparation for teleop.
+ * =================================================*/
 
 public class SpinToWin extends Command
 {

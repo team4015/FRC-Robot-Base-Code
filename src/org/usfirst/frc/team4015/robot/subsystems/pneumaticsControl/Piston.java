@@ -2,6 +2,15 @@ package org.usfirst.frc.team4015.robot.subsystems.pneumaticsControl;
 
 import edu.wpi.first.wpilibj.Solenoid;
 
+/* ===================================================
+ * This class enables control of a piston using a double
+ * soleniod.  To create a piston, construct and instance
+ * of this object (with the solenoid channels as arguments) 
+ * within the pneumatics subsystem.
+ * 
+ * NOTE: THIS CLASS ONLY WORKS WHEN USING DOUBLE SOLENOIDS
+ * =================================================*/
+
 public class Piston
 {
 	public Solenoid left;

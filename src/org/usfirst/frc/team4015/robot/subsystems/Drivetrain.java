@@ -6,6 +6,12 @@ import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
+/* ===================================================
+ * This class contains the methods required to drive 
+ * the robot with a tank drive or mecanum drive chassis.
+ * Mecanum drive methods are not programmed yet.
+ * =================================================*/
+
 public class Drivetrain extends Subsystem
 {	
 	public Talon frontLeft;

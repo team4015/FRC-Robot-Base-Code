@@ -5,6 +5,11 @@ import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc.team4015.robot.OI;
 import org.usfirst.frc.team4015.robot.Robot;
 
+/* ===================================================
+ * This command moves the piston up and down when button
+ * 4 on the Attack 3 stick is pressed.
+ * =================================================*/
+
 public class MovePiston extends Command
 {
 	public MovePiston()

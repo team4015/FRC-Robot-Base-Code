@@ -3,6 +3,14 @@ package org.usfirst.frc.team4015.robot.robotModes;
 import org.usfirst.frc.team4015.robot.commands.Drive;
 import org.usfirst.frc.team4015.robot.commands.MovePiston;
 import org.usfirst.frc.team4015.robot.commands.ToggleCompressor;
+
+/* ===================================================
+ * This CommandGroup enables control of the drivetrain,
+ * piston, and compressor during teleop mode.
+ * To leave the compressor on automatic control, 
+ * remove the line "addParallel(new ToggleCompressor());"
+ * =================================================*/
+
 // import other teleop commands here (pneumatics stuff, etc)
 
 import edu.wpi.first.wpilibj.command.CommandGroup;
