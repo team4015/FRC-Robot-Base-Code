@@ -23,7 +23,7 @@ import org.usfirst.frc.team4015.robot.robotModes.Auto;
  * which part of the match is being played.
  * ============================================================================*/
 
-// HI THIS IS A TEST
+// HI
 
 public class Robot extends IterativeRobot
 {
