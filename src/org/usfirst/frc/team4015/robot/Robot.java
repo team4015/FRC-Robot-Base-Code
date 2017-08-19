@@ -25,7 +25,7 @@ import org.usfirst.frc.team4015.robot.robotModes.Auto;
 
 public class Robot extends IterativeRobot
 {
-	// SUBSYSTEM DECRARTION //
+	// SUBSYSTEM DECLARTION //
 	
 	public static Drivetrain drivetrain;
 	public static Pneumatics pneumatics;
