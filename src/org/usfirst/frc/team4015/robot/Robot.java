@@ -23,8 +23,6 @@ import org.usfirst.frc.team4015.robot.robotModes.Auto;
  * which part of the match is being played.
  * ============================================================================*/
 
-//sdjfkjsdhf
-
 public class Robot extends IterativeRobot
 {
 	// SUBSYSTEM DECLARATION //
