@@ -15,7 +15,7 @@ public class MovePiston extends Command
 	public MovePiston()
 	{
 		// Use requires() here to declare subsystem dependencies
-		requires(Robot.pistonMechanism);
+		requires(Robot.pneumatics);
 	}
 
 	// Called just before this Command runs the first time
@@ -23,7 +23,7 @@ public class MovePiston extends Command
 	protected void initialize()
 	{
 		// Default / starting position
-		Robot.pistonMechanism.piston.retract();
+		Robot.pneumatics.piston.retract();
 	}
 
 	// Called repeatedly when this Command is scheduled to run
@@ -32,7 +32,7 @@ public class MovePiston extends Command
 	{
 		if (OI.leftStick.getRawButton(4) == true)
 		{
-			Robot.pistonMechanism.piston.toggle();
+			Robot.pneumatics.piston.toggle();
 			Timer.delay(1);
 		}
 	}
