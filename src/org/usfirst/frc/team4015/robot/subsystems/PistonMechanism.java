@@ -4,11 +4,9 @@ import org.usfirst.frc.team4015.robot.RobotMap;
 import org.usfirst.frc.team4015.robot.subsystems.pneumaticsControl.Piston;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
-import org.usfirst.frc.team4015.robot.RobotMap;
-import org.usfirst.frc.team4015.robot.subsystems.pneumaticsControl.Piston;
 
 /* ===================================================
- * This is an example of a subsystem that uses a piston
+ * This is a template class for creating new subsystems.
  * =================================================*/
 
 public class PistonMechanism extends Subsystem
@@ -18,6 +16,8 @@ public class PistonMechanism extends Subsystem
 	
 	public Piston piston;
 	
+	// CONSTRUCTOR //
+	
 	public PistonMechanism()
 	{
 		// Add pistons here
@@ -26,8 +26,27 @@ public class PistonMechanism extends Subsystem
 		piston = new Piston(RobotMap.pistonLeftChannel, RobotMap.pistonRightChannel);
 	}
 	
+	// EXTEND //
 	
+	public void extend()
+	{
+		piston.extend();
+	}
 	
+	// RETRACT //
+	
+	public void retract()
+	{
+		piston.retract();
+	}
+	
+	// TOGGLE //
+	
+	public void toggle()
+	{
+		piston.toggle();
+	}
+
 	public void initDefaultCommand()
 	{
 		// Set the default command for a subsystem here.

@@ -59,7 +59,7 @@ public class Robot extends IterativeRobot
 		
 		pneumatics = new Pneumatics();
 		
-		// Create piston mechanism
+		// Create Piston Mechanism
 		
 		pistonMechanism = new PistonMechanism();
 		

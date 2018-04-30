@@ -23,7 +23,7 @@ public class MovePiston extends Command
 	protected void initialize()
 	{
 		// Default / starting position
-		Robot.pistonMechanism.piston.retract();
+		Robot.pistonMechanism.retract();
 	}
 
 	// Called repeatedly when this Command is scheduled to run
@@ -32,7 +32,7 @@ public class MovePiston extends Command
 	{
 		if (OI.leftStick.getRawButton(4) == true)
 		{
-			Robot.pistonMechanism.piston.toggle();
+			Robot.pistonMechanism.toggle();
 			Timer.delay(1);
 		}
 	}
