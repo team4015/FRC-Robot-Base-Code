@@ -12,6 +12,7 @@ import org.usfirst.frc.team4015.robot.commands.ExampleCommand;
 
 import org.usfirst.frc.team4015.robot.subsystems.Drivetrain;
 import org.usfirst.frc.team4015.robot.subsystems.Pneumatics;
+import org.usfirst.frc.team4015.robot.subsystems.PistonMechanism;
 
 // ROBOT MODES (COMMAND GROUP) IMPORTS //
 
@@ -29,6 +30,7 @@ public class Robot extends IterativeRobot
 	
 	public static Drivetrain drivetrain;
 	public static Pneumatics pneumatics;
+	public static PistonMechanism pistonMechanism;
 	
 	// DECLARE ROBOT MODES (COMMAND GROUPS) //
 	
@@ -56,6 +58,10 @@ public class Robot extends IterativeRobot
 		// Create Pnuematics
 		
 		pneumatics = new Pneumatics();
+		
+		// Create Piston Mechanism
+		
+		pistonMechanism = new PistonMechanism();
 		
 		// INSTANTIATE ROBOT MODES (COMMAND GROUPS) //
 		
