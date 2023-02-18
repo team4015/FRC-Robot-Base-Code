@@ -1,26 +1,37 @@
-// Copyright (c) FIRST and other WPILib contributors.
-// Open Source Software; you can modify and/or share it under the terms of
-// the WPILib BSD license file in the root directory of this project.
+/* ==================================================
+ * Authors:
+ *
+ * --------------------------------------------------
+ * Description:
+ *
+ * Use this class as a template for command code.
+ * ================================================== */
 
 package frc.robot.commands;
 
-import frc.robot.subsystems.ExampleSubsystem;
+import static frc.robot.Match.robot;
+import static frc.robot.Match.driver;
+import static frc.robot.Match.operator;
+
 import edu.wpi.first.wpilibj2.command.CommandBase;
 
-/** An example command that uses an example subsystem. */
-public class ExampleCommand extends CommandBase {
+public class ExampleCommand extends CommandBase
+{
   @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
-  private final ExampleSubsystem m_subsystem;
 
-  /**
-   * Creates a new ExampleCommand.
-   *
-   * @param subsystem The subsystem used by this command.
-   */
-  public ExampleCommand(ExampleSubsystem subsystem) {
-    m_subsystem = subsystem;
-    // Use addRequirements() here to declare subsystem dependencies.
-    addRequirements(subsystem);
+  // CONSTANTS //
+
+  // Declare all constant variables here.
+
+  // VARIABLES //
+
+  // Declare all non-constant variables here.
+
+  // CONSTRUCTOR //
+
+  public ExampleCommand()
+  {
+    // Use addRequirements(robot.subsystem) here to declare subsystem dependencies:
   }
 
   // Called when the command is initially scheduled.
@@ -37,7 +48,13 @@ public class ExampleCommand extends CommandBase {
 
   // Returns true when the command should end.
   @Override
-  public boolean isFinished() {
+  public boolean isFinished()
+  {
+    /* Default commands must return false since they are always running.
+     * All other commands should eventually return true when they are finished running.
+     * When a non-default command is scheduled, the robot will interrupt the default command,
+     * run the new command code, and then continue running the default command. */
+
     return false;
   }
 }
